@@ -176,6 +176,7 @@ header label{
 .container-logos{
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 
@@ -904,6 +905,19 @@ footer h2{
 
     .copy p{
         width: 60%;
+    }
+
+    .section-logos{
+        padding: 4rem 2rem;
+    }
+
+    .container-logos img {
+        max-width: 5rem;
+    }
+
+    .container-logos {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
