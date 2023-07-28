@@ -162,6 +162,27 @@ header label{
     width: 15rem;
 }
 
+/* ---------- SECTION LOGOS ---------- */
+.section-logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 4rem 6rem;
+    gap: 2rem;
+}
+
+.container-logos{
+    display: flex;
+    gap: 2rem;
+}
+
+
+.container-logos img{
+    max-width: 7rem;
+}
+
 /* ---------- SECTION TWO ---------- */
 
 .section-two{
