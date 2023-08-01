@@ -150,6 +150,7 @@ header label{
     font-weight: 600;
     cursor: pointer;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.411);
+    color: #fff;
 }
 
 .button-principal:hover{
@@ -163,7 +164,7 @@ header label{
 }
 
 /* ---------- SECTION LOGOS ---------- */
-.section-logos{
+/* .section-logos{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,6 +183,42 @@ header label{
 
 .container-logos img{
     max-width: 7rem;
+} */
+
+.section-marcas{
+    padding: 2rem;
+}
+
+.section-marcas h2{
+    text-align: center;
+}
+
+.section-logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 4rem 6rem;
+    gap: 2.5rem;
+}
+
+.section-logos i{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.section-logos i:hover{
+    color: var(--mainColor);
+}
+
+.slick-carousel{
+    width: 100%;
+    display: flex;
+}
+
+.slick-carousel img{
+    max-width: 15rem;
 }
 
 /* ---------- SECTION TWO ---------- */
@@ -908,7 +945,7 @@ footer h2{
     }
 
     .section-logos{
-        padding: 4rem 2rem;
+        padding: 2rem;
     }
 
     .container-logos img {
@@ -918,6 +955,14 @@ footer h2{
     .container-logos {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .slick-carousel img {
+        max-width: 100%;
+    }
+
+    .section-marcas {
+        padding: 4rem;
     }
 }
 

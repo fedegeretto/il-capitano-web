@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Favicon -->
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
     <title>Il Capitano - Soporte Informático</title>
 </head>
 <body>
@@ -20,7 +26,7 @@
         <div class="header-top">
             <div>
                 <!-- <i class="bi bi-telephone-fill"></i> -->
-                <p>10% OFF DE INSTALACIÓN EN LA PRIMERA COMPRA</p>
+                <p>10% OFF EN LA PRIMERA INSTALACIÓN</p>
             </div>        
             <!-- <div>
                 <i class="bi bi-envelope-fill"></i>
@@ -29,7 +35,7 @@
         </div>
         <div class="header-top-mobile">
             <!-- <i class="bi bi-telephone-fill"></i> -->
-            <p>10% OFF DE INSTALACIÓN EN LA PRIMERA COMPRA</p>
+            <p>10% OFF EN LA PRIMERA INSTALACIÓN</p>
         </div>
         <div class="header">
             <div class="logo-container">
@@ -96,7 +102,7 @@
                     <p>Si estás fuera de casa, comparte el acceso a tus cámaras de seguridad con tus seres queridos para que también puedan monitorear la seguridad de tu hogar o negocio.</p>
                 </div>
             </div>
-            <button class="button-principal">Chatea con un asesor</button>
+            <button class="button-principal">QUIERO ASESORAMIENTO</button>
         </section>
         <!-- SECTION THREE -->
         <section class="section-three" id="caracteristicas">
@@ -166,25 +172,46 @@
             </form>
         </section>
                 <!-- SECTION LOGOS -->
-                <section class="section-logos">
+                <div class="section-marcas">
                     <h2 class="main-title">Nuestros clientes</h2>
-                    <div class="container-logos">
-                        <img src="./images/logos/matezz-modified.png" alt="Logo de Matezz">
-                        <img src="./images/logos/sindicato-modified.png" alt="">
-                        <img src="./images/logos/rakhi-modified.png" alt="">
-                        <img src="./images/logos/san martin-modified.png" alt="">
-                        <img src="./images/logos/3-modified.png" alt="">
-                        <img src="./images/logos/1-modified.png" alt="">
-                        <img src="./images/logos/2-modified.png" alt="">
-                        <img src="./images/logos/4-modified.png" alt="">
+                    <div class="section-logos">
+                    
+                        <div class="custom-arrow prev-arrow">
+                            <i class="fas fa-angle-left"></i>
+                        </div>
+                            <div class="slick-carousel">
+                                <div><img src="./images/logos/matezz-modified.png" alt="Logo de Matezz"></div>
+                                <div><img src="./images/logos/sindicato-modified.png" alt=""></div>
+                                <div><img src="./images/logos/rakhi-modified.png" alt=""></div>
+                                <div><img src="./images/logos/san martin-modified.png" alt=""></div>
+                                <div><img src="./images/logos/3-modified.png" alt=""></div>
+                                <div><img src="./images/logos/1-modified.png" alt=""></div>
+                                <div><img src="./images/logos/2-modified.png" alt=""></div>
+                                <div><img src="./images/logos/4-modified.png" alt=""></div>
+                                <!-- Agrega más imágenes o contenido aquí -->
+                              </div>
+                              <div class="custom-arrow next-arrow">
+                                <i class="fas fa-angle-right"></i>
+                              </div>
+                    
+                        <!-- <div class="container-logos">
+                            <img src="./images/logos/matezz-modified.png" alt="Logo de Matezz">
+                            <img src="./images/logos/sindicato-modified.png" alt="">
+                            <img src="./images/logos/rakhi-modified.png" alt="">
+                            <img src="./images/logos/san martin-modified.png" alt="">
+                            <img src="./images/logos/3-modified.png" alt="">
+                            <img src="./images/logos/1-modified.png" alt="">
+                            <img src="./images/logos/2-modified.png" alt="">
+                            <img src="./images/logos/4-modified.png" alt="">
+                        </div> -->
+                        <!-- <div class="container-logos">
+                            <img src="./images/logos/3-modified.png" alt="">
+                            <img src="./images/logos/1-modified.png" alt="">
+                            <img src="./images/logos/2-modified.png" alt="">
+                            <img src="./images/logos/4-modified.png" alt="">
+                        </div> -->
                     </div>
-                    <!-- <div class="container-logos">
-                        <img src="./images/logos/3-modified.png" alt="">
-                        <img src="./images/logos/1-modified.png" alt="">
-                        <img src="./images/logos/2-modified.png" alt="">
-                        <img src="./images/logos/4-modified.png" alt="">
-                    </div> -->
-                </section>
+                </div>
     </main>
     <!-- FOOTER -->
     <footer>
@@ -216,5 +243,31 @@
 
     </footer>  
     <script src="./js/main.js"></script>
+    <script>
+    $('.slick-carousel').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        prevArrow: $('.prev-arrow'),
+        nextArrow: $('.next-arrow'),
+        responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+    {
+      breakpoint: 1060,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    ]
+    });
+    </script>
+      
 </body>
 </html>
