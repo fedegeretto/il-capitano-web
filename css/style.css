@@ -364,7 +364,7 @@ header label{
 }
 
 .card-info h3{
-    color: var(--mainColor);
+    color: #202020;
     font-size: 2rem;
 }
 
@@ -834,7 +834,7 @@ footer h2{
     }
 
     .card-info h3{
-        color: var(--mainColor);
+        color: #202020;
     }
 
     /* ---------- SECTION FOUR RESPONSIVE---------- */
