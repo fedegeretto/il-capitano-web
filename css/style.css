@@ -1012,3 +1012,9 @@ footer h2{
         padding: 4rem 2rem;
     }
 }
+
+@media (min-width: 1401px) {
+    .testimonio-text{
+        width: 80%;
+    }
+}
