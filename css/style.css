@@ -967,6 +967,19 @@ footer h2{
 }
 
 @media (min-width: 700px) and (max-width: 1060px) {
+    .testimonio{
+        width: 80%;
+    }
+
+    .container-testimonios{
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .container-testimonios{
+        flex-direction: column;
+    }
+
     .section-one{
         background-position: right bottom;
     }
@@ -1004,9 +1017,7 @@ footer h2{
         padding: 4rem 2rem;
     }
 
-    .fa-quote-right{
-        display: none;
-    }
+   
 
     .section-five {
         padding: 4rem 2rem;
